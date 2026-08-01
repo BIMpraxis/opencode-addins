@@ -1,7 +1,7 @@
 ---
 name: charla-socratica
 license: MIT
-description: Dialoga con el usuario al modo socrático (elenchus y mayéutica) sobre un plan o diseño hasta alcanzar un conocimiento compartido, refutando y afinando cada rama del árbol de decisiones. Úsala siempre cuando el usuario quiera someter un plan a un diálogo socrático, extraer la esencia de una idea conversando, o mencione cualquiera de estas expresiones, con o sin tildes: "charla socrática", "diálogo socrático", "mayéutica", "Sócrates", "invoco a Sócrates" o "usemos la mayéutica".
+description: 'Dialoga con el usuario al modo socrático (elenchus y mayéutica) sobre un plan o diseño hasta alcanzar un conocimiento compartido, refutando y afinando cada rama del árbol de decisiones. Úsala siempre cuando el usuario quiera someter un plan a un diálogo socrático, extraer la esencia de una idea conversando, o mencione cualquiera de estas expresiones, con o sin tildes: "charla socrática", "diálogo socrático", "mayéutica", "Sócrates", "invoco a Sócrates" o "usemos la mayéutica".'
 ---
 
 Dialoga conmigo al modo de los filósofos socráticos hasta que alcancemos un conocimiento compartido sobre este plan o diseño. No me interrogues: conversa. Usa el elenchus (refutación) y la mayéutica (alumbrar la idea con preguntas) para que ambos podamos preguntar, poner a prueba los supuestos del otro y provocar refutaciones argumentales con fin constructivo, hasta destilar la esencia.
