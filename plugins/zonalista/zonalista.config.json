@@ -1,0 +1,16 @@
+{
+  "default_threshold": 190000,
+  "warning_ratio": 0.9,
+  "rules": {
+    "below_250k": { "max_context": 250000, "threshold_percent": 0.85 },
+    "from_250k_to_500k": { "min_context": 250000, "max_context": 500000, "threshold_percent": 0.85 },
+    "above_500k": { "min_context": 500000, "threshold_fixed": 240000 }
+  },
+  "model_thresholds": {
+    "mi-proxy-local:mi-modelo-7b": 8000,
+    "mi-proxy-local:mi-modelo-70b": 32000,
+    "anthropic:claude-sonnet-4-5": 200000,
+    "openai:gpt-4o": 128000,
+    "openrouter:vendor/modelo-ejemplo": 120000
+  }
+}
