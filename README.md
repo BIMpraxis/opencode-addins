@@ -21,6 +21,8 @@ Están pensadas para instalarse, modificarse y hacerse tuyas. Si encuentras algo
 
 ### Skills (vía skills.sh)
 
+Las skills de este repo están listadas en **[skills.sh/bimpraxis/opencode-addins](https://skills.sh/bimpraxis/opencode-addins)**. Ten en cuenta que skills.sh solo distribuye las **skills**; el **plugin zonalista** no aparece ahí y requiere instalación manual (ver [Plugin zonalista](#plugin-zonalista)).
+
 ```bash
 npx skills add BIMpraxis/opencode-addins
 ```
