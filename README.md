@@ -9,13 +9,14 @@ Están pensadas para instalarse, modificarse y hacerse tuyas. Si encuentras algo
 
 ## Qué incluye
 
-| Tipo | Nombre | Para qué sirve |
-| --- | --- | --- |
-| Skill | [`charla-socratica`](./skills/charla-socratica/SKILL.md) | Dialoga contigo al modo socrático (elenchus y mayéutica) para destilar la esencia de un plan o diseño. |
-| Skill | [`lenguaje-ubicuo`](./skills/lenguaje-ubicuo/SKILL.md) | Crea y mantiene un `CONTEXT.md` con la terminología de dominio del proyecto a partir de su documentación. |
-| Skill | [`traspaso`](./skills/traspaso/SKILL.md) | Genera o retoma un documento de traspaso (handoff) efímero para no perder contexto entre sesiones. |
-| Skill | [`verifica-fuentes`](./skills/verifica-fuentes/SKILL.md) | Obliga al agente a investigar y citar fuentes antes de responder, evitando respuestas inventadas. |
-| Plugin | [`zonalista`](./plugins/zonalista/LEEME.md) | Vigila el consumo de tokens de la sesión y prepara un traspaso automático antes de agotar el contexto. |
+| Tipo   | Nombre                                                   | Para qué sirve                                                                                                    |
+| ------ | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| Skill  | [`charla-socratica`](./skills/charla-socratica/SKILL.md) | Dialoga contigo al modo socrático (elenchus y mayéutica) para destilar la esencia de un plan o diseño.            |
+| Skill  | [`hoja-de-ruta`](./skills/hoja-de-ruta/SKILL.md)         | Traduce el PRD, SPECS o documento similar junto al histórico git en una hoja de ruta didáctica centrada en valor. |
+| Skill  | [`lenguaje-ubicuo`](./skills/lenguaje-ubicuo/SKILL.md)   | Crea y mantiene un `CONTEXT.md` con la terminología de dominio del proyecto a partir de su documentación.         |
+| Skill  | [`traspaso`](./skills/traspaso/SKILL.md)                 | Genera o retoma un documento de traspaso (handoff) efímero para no perder contexto entre sesiones.                |
+| Skill  | [`verifica-fuentes`](./skills/verifica-fuentes/SKILL.md) | Obliga al agente a investigar y citar fuentes antes de responder, evitando respuestas inventadas.                 |
+| Plugin | [`zonalista`](./plugins/zonalista/LEEME.md)              | Vigila el consumo de tokens de la sesión y prepara un traspaso automático antes de agotar el contexto.            |
 
 ## Instalación
 
@@ -55,6 +56,7 @@ El plugin **no** se instala con `npx skills`. Es un plugin nativo de opencode. C
 opencode-addins/
 ├── skills/                  # skills instalables con `npx skills add`
 │   ├── charla-socratica/
+│   ├── hoja-de-ruta/
 │   ├── lenguaje-ubicuo/
 │   ├── traspaso/
 │   └── verifica-fuentes/
