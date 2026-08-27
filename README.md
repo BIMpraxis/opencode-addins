@@ -3,20 +3,25 @@
 [![skills.sh](https://skills.sh/b/BIMpraxis/opencode-addins)](https://skills.sh/BIMpraxis/opencode-addins)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
+> 🌐 **Idioma:** **Español** | [English](./README.en.md)
+
 Skills y plugins para [opencode](https://opencode.ai) que uso a diario para hacer ingeniería de verdad: pequeñas, fáciles de adaptar y componibles. Funcionan con cualquier modelo.
 
 Están pensadas para instalarse, modificarse y hacerse tuyas. Si encuentras algo útil, cópialo y adáptalo sin miedo.
 
 ## Qué incluye
 
-| Tipo   | Nombre                                                   | Para qué sirve                                                                                                    |
-| ------ | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| Skill  | [`charla-socratica`](./skills/charla-socratica/SKILL.md) | Dialoga contigo al modo socrático (elenchus y mayéutica) para destilar la esencia de un plan o diseño.            |
-| Skill  | [`hoja-de-ruta`](./skills/hoja-de-ruta/SKILL.md)         | Traduce el PRD, SPECS o documento similar junto al histórico git en una hoja de ruta didáctica centrada en valor. |
-| Skill  | [`lenguaje-ubicuo`](./skills/lenguaje-ubicuo/SKILL.md)   | Crea y mantiene un `CONTEXT.md` con la terminología de dominio del proyecto a partir de su documentación.         |
-| Skill  | [`traspaso`](./skills/traspaso/SKILL.md)                 | Genera o retoma un documento de traspaso (handoff) efímero para no perder contexto entre sesiones.                |
-| Skill  | [`verifica-fuentes`](./skills/verifica-fuentes/SKILL.md) | Obliga al agente a investigar y citar fuentes antes de responder, evitando respuestas inventadas.                 |
-| Plugin | [`zonalista`](./plugins/zonalista/LEEME.md)              | Vigila el consumo de tokens de la sesión y prepara un traspaso automático antes de agotar el contexto.            |
+| Tipo   | Nombre                                                   | Para qué sirve                                                                                                                                                          | Dependencias                                    |
+| ------ | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| Skill  | [`aletheia`](./skills/aletheia/SKILL.md)                 | Explora lo aún informe antes del brief: exterioriza, desfija fijaciones y prueba posibilidades con el círculo de quintas (Wittgenstein–Shklovski–Duchamp–Eno–Derrida) hasta cosechar una semilla fértil o una aporía productiva. | ◐ `charla-socratica` · `verifica-fuentes`        |
+| Skill  | [`charla-socratica`](./skills/charla-socratica/SKILL.md) | Dialoga al modo socrático —elenchus y mayéutica— para poner a prueba supuestos y destilar, rama a rama, la esencia de un plan o diseño hasta alcanzar conocimiento compartido. | ● Autónoma                                      |
+| Skill  | [`hoja-de-ruta`](./skills/hoja-de-ruta/SKILL.md)         | Traduce el PRD/SPECS y el histórico de git en una hoja de ruta didáctica centrada en valor, con hitos, esfuerzo estimado y distinción entre MVP y más allá.            | ● Autónoma                                      |
+| Skill  | [`lenguaje-ubicuo`](./skills/lenguaje-ubicuo/SKILL.md)   | Analiza `docs/`, PRD y `README.md` para extraer el lenguaje de dominio y mantener un `CONTEXT.md` coherente entre documentación y código.                             | ● Autónoma                                      |
+| Skill  | [`traspaso`](./skills/traspaso/SKILL.md)                 | Genera o retoma un handoff efímero intra-jornada (`handoff_YYYY-MM-DD_HH-mm.md`) para limpiar contexto y continuar sin pérdida entre sesiones.                         | ● Autónoma                                      |
+| Skill  | [`verifica-fuentes`](./skills/verifica-fuentes/SKILL.md) | Obliga a investigar, triangular al menos dos fuentes independientes y citar antes de responder, evitando respuestas inventadas o desactualizadas.                        | ● Autónoma                                      |
+| Plugin | [`zonalista`](./plugins/zonalista/LEEME.md)              | Vigila el consumo de tokens de la sesión —aviso al 90 % y acción en `session.idle`— y prepara un traspaso automático antes de agotar el contexto.                     | ◎ `traspaso`                                    |
+
+> **Leyenda — Dependencias:** `●` Autónoma — funciona al 100 % sin otras skills. `◐` Potenciada — autónoma, mejora si las skills indicadas están presentes (derivación opcional). `◎` Recomendada — autónoma, pero necesita la skill indicada para su propósito completo.
 
 ## Instalación
 
@@ -55,6 +60,7 @@ El plugin **no** se instala con `npx skills`. Es un plugin nativo de opencode. C
 ```
 opencode-addins/
 ├── skills/                  # skills instalables con `npx skills add`
+│   ├── aletheia/
 │   ├── charla-socratica/
 │   ├── hoja-de-ruta/
 │   ├── lenguaje-ubicuo/
