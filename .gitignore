@@ -19,3 +19,6 @@ secrets/
 
 # Traspasos efimeros generados por la skill de traspaso
 handoff_*.md
+
+# graft's local graph cache — regenerable, not committed (run `graft build`).
+/graft/

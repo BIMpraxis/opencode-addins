@@ -15,6 +15,7 @@ They are meant to be installed, modified and made yours. If you find something u
 | ------ | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------- |
 | Skill  | [`aletheia`](./skills/aletheia/SKILL.md)                 | When you have no ideas: helps you unblock, refocus or start from a blank page until you reach the «wow, it feels like magic» effect, combining techniques from Wittgenstein, Shklovsky, Duchamp, Eno and Derrida in a procedure inspired by the musical circle of fifths, adapted to creativity to reharmonize the project. | ◐ `charla-socratica` · `verifica-fuentes`      |
 | Skill  | [`charla-socratica`](./skills/charla-socratica/SKILL.md) | Socratic dialogue — elenchus and maieutics — to stress-test assumptions and distill, branch by branch, the essence of a plan or design into shared knowledge.          | ● Standalone                                  |
+| Skill  | [`cierra-ciclo`](./skills/cierra-ciclo/SKILL.md)         | Runs the end-of-cycle close-out: updates the PRD and `CONTEXT.md`, generates the handoff via `traspaso`, removes obsolete ones, and performs a verified `git add -A`/commit/push. | ◐ `lenguaje-ubicuo` · `traspaso`              |
 | Skill  | [`hoja-de-ruta`](./skills/hoja-de-ruta/SKILL.md)         | Turns the PRD/SPECS and git history into a value-focused, didactic roadmap with milestones, effort estimates and a clear MVP vs. beyond-MVP split.                      | ● Standalone                                  |
 | Skill  | [`lenguaje-ubicuo`](./skills/lenguaje-ubicuo/SKILL.md)   | Scans `docs/`, PRD and `README.md` to extract domain language and keep a coherent `CONTEXT.md` aligned with the codebase.                                               | ● Standalone                                  |
 | Skill  | [`optimiza-prompt`](./skills/optimiza-prompt/SKILL.md)   | Rewrites the prompt you give it into an optimized version: clearer, better structured, with anti-error safeguards and without losing any data from the original.      | ● Standalone                                  |
@@ -73,6 +74,7 @@ opencode-addins/
 ├── skills/                  # skills installable via `npx skills add`
 │   ├── aletheia/
 │   ├── charla-socratica/
+│   ├── cierra-ciclo/
 │   ├── hoja-de-ruta/
 │   ├── lenguaje-ubicuo/
 │   ├── optimiza-prompt/

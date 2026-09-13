@@ -15,6 +15,7 @@ Están pensadas para instalarse, modificarse y hacerse tuyas. Si encuentras algo
 | ------ | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
 | Skill  | [`aletheia`](./skills/aletheia/SKILL.md)                 | Para cuando no hay ideas: te ayuda a desbloquear, reenfocar o empezar desde el papel en blanco hasta lograr el efecto «¡guau, parece magia!» combinando técnicas de Wittgenstein, Shklovski, Duchamp, Eno y Derrida en un procedimiento inspirado en el círculo de quintas musical, adaptado a la creatividad para rearmonizar el proyecto. | ◐ `charla-socratica` · `verifica-fuentes`        |
 | Skill  | [`charla-socratica`](./skills/charla-socratica/SKILL.md) | Dialoga al modo socrático —elenchus y mayéutica— para poner a prueba supuestos y destilar, rama a rama, la esencia de un plan o diseño hasta alcanzar conocimiento compartido. | ● Autónoma                                      |
+| Skill  | [`cierra-ciclo`](./skills/cierra-ciclo/SKILL.md)         | Ejecuta el cierre de ciclo: actualiza PRD y `CONTEXT.md`, genera el handoff con `traspaso`, elimina los obsoletos y hace `git add -A`/commit/push verificado. | ◐ `lenguaje-ubicuo` · `traspaso`                |
 | Skill  | [`hoja-de-ruta`](./skills/hoja-de-ruta/SKILL.md)         | Traduce el PRD/SPECS y el histórico de git en una hoja de ruta didáctica centrada en valor, con hitos, esfuerzo estimado y distinción entre MVP y más allá.            | ● Autónoma                                      |
 | Skill  | [`lenguaje-ubicuo`](./skills/lenguaje-ubicuo/SKILL.md)   | Analiza `docs/`, PRD y `README.md` para extraer el lenguaje de dominio y mantener un `CONTEXT.md` coherente entre documentación y código.                             | ● Autónoma                                      |
 | Skill  | [`optimiza-prompt`](./skills/optimiza-prompt/SKILL.md)   | Reescribe el prompt que le das en una versión optimizada: más clara y estructurada, con salvaguardas anti-error y sin perder ningún dato del original.                 | ● Autónoma                                      |
@@ -73,6 +74,7 @@ opencode-addins/
 ├── skills/                  # skills instalables con `npx skills add`
 │   ├── aletheia/
 │   ├── charla-socratica/
+│   ├── cierra-ciclo/
 │   ├── hoja-de-ruta/
 │   ├── lenguaje-ubicuo/
 │   ├── optimiza-prompt/
